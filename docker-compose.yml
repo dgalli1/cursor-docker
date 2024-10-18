@@ -1,0 +1,10 @@
+name: cursor
+services:
+    cursor:
+        devices:
+            - /dev/fuse
+        cap_add:
+            - SYS_ADMIN
+        image: cursor:latest
+        ports:
+          - "3000:3000"
