@@ -1,6 +1,8 @@
 name: cursor
 services:
     cursor:
+        build:
+          context: .
         devices:
             - /dev/fuse
         cap_add:
